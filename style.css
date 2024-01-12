@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#fundo1{
+    background-color: aqua;
+    width: 598px;
+    height: 406px;
+}
+
+.ppt{
+    display: flex;
+    width: 500px;
+    height: auto;
+    justify-content: space-around;
+    padding-top: 25px ;
+    
+    
+}
+
+.texto {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 100px;
+
+}
+.fundo1-pontuacao{
+     margin-left: 50px;
+     width: 100px;
+}
+
+
+img{
+    justify-content: space-between;
+    text-align: left;
+}
