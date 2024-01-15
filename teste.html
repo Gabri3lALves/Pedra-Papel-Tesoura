@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    button {
+      font-size: 16px;
+      margin: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+  <title>Pedra, Papel e Tesoura</title>
+</head>
+<body>
+
+  <h1>Jogo: Pedra, Papel e Tesoura</h1>
+
+  <button onclick="jogar('pedra')">Pedra</button>
+  <button onclick="jogar('papel')">Papel</button>
+  <button onclick="jogar('tesoura')">Tesoura</button>
+
+  <h2 id="resultado"></h2>
+  <h3>Placar:</h3>
+  <p id="placarUsuario">Usuário: 0</p>
+  <p id="placarComputador">Computador: 0</p>
+
+  <script>
+    let placarUsuario = 0;
+    let placarComputador = 0;
+    let tentativasRestantes = 3;
+
+    function jogar(escolhaUsuario) {
+      if (tentativasRestantes > 0) {
+        const opcoes = ['pedra', 'papel', 'tesoura'];
+        const escolhaComputador = opcoes[Math.floor(Math.random() * 3)];
+
+        const resultado = verificarResultado(escolhaUsuario, escolhaComputador);
+
+        document.getElementById('resultado').innerText = `Você escolheu ${escolhaUsuario}. O computador escolheu ${escolhaComputador}. Resultado: ${resultado}`;
+
+        if (resultado === 'Você ganhou!') {
+          placarUsuario++;
+        } else if (resultado === 'Você perdeu!') {
+          placarComputador++;
+        }
+
+        tentativasRestantes--;
+
+        document.getElementById('placarUsuario').innerText = `Usuário: ${placarUsuario}`;
+        document.getElementById('placarComputador').innerText = `Computador: ${placarComputador}`;
+
+        if (placarUsuario === 2 || placarComputador === 2) {
+          document.getElementById('resultado').innerText = `Jogo encerrado. Placar final: Usuário ${placarUsuario}, Computador ${placarComputador}.`;
+        } else if (tentativasRestantes === 0) {
+          document.getElementById('resultado').innerText = `Fim do jogo. Placar final: Usuário ${placarUsuario}, Computador ${placarComputador}.`;
+        }
+      } else {
+        document.getElementById('resultado').innerText = 'O jogo acabou. Reinicie para jogar novamente.';
+      }
+    }
+
+    function verificarResultado(usuario, computador) {
+      if (usuario === computador) {
+        return 'Empate!';
+      } else if (
+        (usuario === 'pedra' && computador === 'tesoura') ||
+        (usuario === 'papel' && computador === 'pedra') ||
+        (usuario === 'tesoura' && computador === 'papel')
+      ) {
+        return 'Você ganhou!';
+      } else {
+        return 'Você perdeu!';
+      }
+    }
+  </script>
+
+</body>
+</html>

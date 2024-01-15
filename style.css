@@ -1,38 +1,133 @@
-h1 {
+h1{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#fundo1{
-    background-color: aqua;
-    width: 598px;
-    height: 406px;
-}
 
-.ppt{
+
+.fundo{
     display: flex;
-    width: 500px;
-    height: auto;
-    justify-content: space-around;
-    padding-top: 25px ;
-    
-    
-}
-
-.texto {
-    display: flex;
-    justify-content: space-evenly;
-    width: 500px;
-    height: 100px;
-
-}
-.fundo1-pontuacao{
-     margin-left: 50px;
-     width: 100px;
-}
-
-
-img{
+    height: 250px;
     justify-content: space-between;
-    text-align: left;
+}
+
+#fundoMaquina{
+    background-color: rgb(179, 172, 172);
+    display: flex;
+}
+
+#fundoJogador{
+    background-color: aqua;
+    display: flex;
+}
+
+.textos{
+    display: flex;
+    height: 75px;
+    background-color:rgb(185, 179, 179);
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.nomeJOG{
+    padding-left: 70px;
+}
+
+.pont{
+    display: flex;
+    padding-right: 80px;
+    
+}
+
+.num{
+    margin-right: 150px;
+}
+
+.imagens{
+    display: flex;
+    height: 150px;
+    background-color:rgb(185, 179, 179);
+    justify-content: space-evenly;
+
+}
+
+
+.textosJog{
+    display: flex;
+    height: 75px;
+    background-color: aqua;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.imagensJog{
+    display: flex;
+    height: 160px;
+    background-color:aqua;
+    justify-content: space-evenly;
+    
+}
+
+.imgFig:hover {
+    opacity: 1;
+  }
+
+.img{
+    text-align: center;
+}
+
+.imgFig{
+        display: flex;
+        height: 150px;
+        background-color:aqua;
+        justify-content: space-evenly;
+        opacity: 0.8;
+        transition: opacity 0.3s ease; 
+}
+
+
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.pedraM-Atl{
+    background-color: rgb(255, 255, 106);
+}
+
+.papelM-Atl{
+    background-color: rgb(255, 255, 106);
+}
+
+.tesouraM-Atl{
+    background-color: rgb(255, 255, 106);
+}
+
+button{
+    display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #3498db; /* Cor de fundo */
+      color: #ffffff; /* Cor do texto */
+      border: 2px solid #3498db; /* Cor da borda */
+      transition: background-color 0.3s ease, color 0.3s ease;
+      text-align: end;
+}
+
+button:hover {
+    background-color: #2980b9; /* Cor de fundo ao passar o mouse */
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+}
+
+.botao{
+    text-align: end;
 }

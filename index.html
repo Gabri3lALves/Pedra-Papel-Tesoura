@@ -10,66 +10,75 @@
 
     <h1>JOGO: Pedra, Papel e Tesoura</h1>
 
-    <div class="fundo" id="fundo1">
-
-        <div class="texto">
-
-            <h3 >Você</h3>
-            <h3 class="fundo1-pontuacao">Pontuação:</h3>
-            <h3 class="fundo1-pontuacao">0</h3>
-
-        </div>
+        <div class="textos">
+            <h3 class="nomeJOG">Máquina</h3>
+            <div class="pont">
+                <h3 class="">Pontuação: </h3>
+                <h3 class="" id="placarMaquina">0</h3>
+            </div>
             
 
-        <div class="ppt">
+        </div>
 
+        <div class="imagens">
+           <div> 
+                <img src="Imagens/Pedra-removebg-preview.png" alt="Imagem de uma pedra" id="pedraM"> 
+            </div>
             <div> 
-                <a href="">
-                    <img src="/Imagens/Pedra-removebg-preview.png" alt="">
-                </a> 
+                <img class="imgFigM" src="Imagens/Papel-removebg-preview.png" alt="Imagem de um papel" id="papelM"> 
             </div>
 
             <div> 
-                <a href="">
-                    <img src="/Imagens/Papel-removebg-preview.png" alt="">
-                </a> 
-            </div>
-
-            <div> 
-                <a href="">
-                    <img src="/Imagens/Tesoura-removebg-preview.png" alt="">
-                </a> 
-            </div>
-
+                <img class="imgFigM" src="Imagens/Tesoura-removebg-preview.png" alt="imagem de uma tesoura" id="tesouraM"> 
+            </div> 
+        </div>
+        
+        <div class="img">
+            <img src="Imagens/vs.jpg" alt="" width="100px" class="vs">
         </div>
         
 
-    </div>
+        <div class="textosJog">
+            <h3 class="nomeJOG">Você</h3>
+            <div class="pont">
+                <h3 class="">Pontuação: </h3>
+                <h3 class="" id="placarUsuario">0</h3>
+            </div>
+        </div>
 
-    <h2>Vs</h2>
+            <div class="imagensJog">
+                <div> 
+                     <a href="#">
+                        <img class="imgFig" src="Imagens/Pedra-removebg-preview.png" alt="Imagem de uma pedra" id="pedraJ"> 
+                    </a>
+                   
+                 </div>
+     
+                 <div> 
+                    <a href="#">
+                        <img class="imgFig"  src="Imagens/Papel-removebg-preview.png" alt="Imagem de um papel" id="papelJ"> 
+                    </a>
+                     
+                 </div>
+     
+                 <div>
+                     <a href="#">
+                        <img class="imgFig" src="Imagens/Tesoura-removebg-preview.png" alt="imagem de uma tesoura" id="tesouraJ" > 
+                    </a> 
+                     
+                 </div> 
+             </div>
 
-    <div class="fundo" id="fundo2">
+             
+                <p id="resultadoTela"></p>
+
+                <div class="botao" id="botao">
+                    <button> reiniciar</button>
+                </div>
+            
+    
+    <script src="scripts.js">
         
-        <h3>Máquina</h3>
-        <h3>Pontuação: </h3>
-        <h3>0</h3>
-
-        <div> 
-            <img src="/Imagens/Pedra-removebg-preview.png" alt=""> 
-        </div>
-
-        <div> 
-            <img src="/Imagens/Papel-removebg-preview.png" alt=""> 
-        </div>
-
-        <div> 
-            <img src="/Imagens/Tesoura-removebg-preview.png" alt=""> 
-        </div>
-
-    </div>
-
-    <script>
-
     </script>
 </body>
 </html>
