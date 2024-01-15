@@ -83,7 +83,7 @@ h1{
         height: 150px;
         background-color:aqua;
         justify-content: space-evenly;
-        opacity: 0.8;
+        opacity: 0.5;
         transition: opacity 0.3s ease; 
 }
 
@@ -130,4 +130,9 @@ button:hover {
 
 .botao{
     text-align: end;
+}
+
+#criador{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
